@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "figtree";
+  src: url(https://fonts.google.com/specimen/Figtree);
+}
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+body {
+  background-color: hsl(47, 88%, 63%);
+  font-family: "Figtree";
+  font-size: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 10px 10px 0px black;
+  padding: 16px;
+  width: 336px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: auto;
+}
+.image img {
+  border-radius: 8px;
+}
+.learning {
+  background-color: hsl(47, 88%, 63%);
+  font-weight: 800;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 6px 10px;
+  height: 20px;
+}
+h2 {
+  font-weight: 800;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+.published h3 {
+  font-weight: 600;
+  font-size: 16px;
+}
+.foundations h1 {
+  font-size: 25px;
+  font-weight: 800;
+  margin: 0;
+}
+.foundations h1 a {
+  text-decoration: none;
+  color: black;
+}
+.foundations h1 a:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.structure p {
+  margin: 16px 10px 0 0;
+  text-align: left;
+  color: hsl(0, 0%, 50%) ;
+}
+.greg-hooper{
+    display: flex;
+    font: 16px;
+    padding: 16px 0;
+}
+.greg-hooper img{
+   height: 40px;
+}
+.greg-hooper p{
+    font-weight: 800;
+    padding: 0 10px;
+    margin: auto;
+    font-size: 12px
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 0 0 15px 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 375px) {
+  .card {
+    width: 70%; /* Altera a largura da card para ocupar toda a largura da tela */
+  }
+  .image img {
+    width: 100%;
+  }
+  .foundations h1 {
+    font-size:20px;
+  }
+}
